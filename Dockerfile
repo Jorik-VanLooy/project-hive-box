@@ -8,7 +8,7 @@ COPY /cmd/app/go.mod /cmd/app/go.sum ./
 RUN go mod download
 
 # export version as environment variable
-ENV VERSION=v0.1.2
+ENV VERSION=v0.2.4
 
 # Copy the source code. Note the slash at the end, as explained in
 # https://docs.docker.com/reference/dockerfile/#copy
