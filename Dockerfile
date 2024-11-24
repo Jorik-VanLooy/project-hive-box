@@ -1,4 +1,4 @@
-FROM golang:1.22
+FROM golang:1.22@sha256:147f428a24c6b80b8afbdaec7f245b9e7ac342601e3aeaffb321a103b7c6b3f4
 
 # Set destination for COPY
 WORKDIR /app
