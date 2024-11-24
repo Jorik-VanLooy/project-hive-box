@@ -59,7 +59,7 @@ jobs:
 
       - name: set version for environment
         run: |
-          sed -i 's/GOLANG_VER/${{ github.event.inputs.version }}/g' Dockerfile
+          sed -i 's/v[0-9]+.[0-9]+.[0-9]+/${{ github.event.inputs.version }}/g' Dockerfile
 
       - name: Build and push
         id: docker_build
