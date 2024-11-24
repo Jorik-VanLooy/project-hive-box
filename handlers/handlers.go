@@ -8,5 +8,5 @@ import (
 
 func GetVersion(w http.ResponseWriter, r *http.Request) {
 	golangVersion := os.Getenv("VERSION")
-	fmt.Fprintf(w, golangVersion)
+	fmt.Fprint(w, golangVersion)
 }
