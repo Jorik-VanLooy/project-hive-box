@@ -55,10 +55,3 @@ spec:
     # Expose port 80 on the service
     port: 3333
     # Target port 3000 on the app pod
----
-kind: Secret
-apiVersion: v1
-metadata:
-  name: OpenWeatherApiKey
-  annotations:
-    avp.kubernetes.io/path: "path/to/secret"
