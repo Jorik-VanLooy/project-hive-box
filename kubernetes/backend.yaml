@@ -22,7 +22,7 @@ spec:
       containers:
       - name: project-hive-box
         # Use the image built from the Dockerfile
-        image: jorikvl/project-hive-box:v0.3.0
+        image: jorikvl/project-hive-box:v0.3.1
         # Set the image pull policy to Never
         # This assumes that the image is already present on the node
         # Change this to Always or IfNotPresent if the image is pulled from a registry
