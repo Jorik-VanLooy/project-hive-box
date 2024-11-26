@@ -29,6 +29,12 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 3333
+        env:
+        - name: OpenWeatherApiKey
+          valueFrom:
+            secretKeyRef:
+              name: web-application
+              key: OpeneatherApiKey
 # Define a service resource for the apps
 ---
 apiVersion: v1
@@ -49,3 +55,10 @@ spec:
     # Expose port 80 on the service
     port: 3333
     # Target port 3000 on the app pod
+---
+kind: Secret
+apiVersion: v1
+metadata:
+  name: OpenWeatherApiKey
+  annotations:
+    avp.kubernetes.io/path: "path/to/secret"
