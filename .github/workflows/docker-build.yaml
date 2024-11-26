@@ -57,6 +57,12 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: download latest modules
+        working-directory: cmd/app
+        run: |
+          hash=$(git log -n 1 --pretty=format:"%H")
+          go get github.com/Jorik-VanLooy/project-hive-box/handlers@$hash
+
       - name: set version for environment
         run: |
           sed -i 's/v[0-9]\+.[0-9]\+.[0-9]\+/${{ github.event.inputs.version }}/g' Dockerfile
