@@ -6,6 +6,8 @@ github.com/Jorik-VanLooy/project-hive-box/handlers v0.0.0-20241126160800-174b75d
 github.com/Jorik-VanLooy/project-hive-box/handlers v0.0.0-20241126160800-174b75d123e0/go.mod h1:+Iv709OXzPkLLItrs8aTylzVeCNVT42VGChRzgLzvcE=
 github.com/Jorik-VanLooy/project-hive-box/handlers v0.0.0-20241126162727-8205923ebc3c h1:96XXRGXZSZ2b4P/oHn0TAeFZD685gbwWTFIBr885HP4=
 github.com/Jorik-VanLooy/project-hive-box/handlers v0.0.0-20241126162727-8205923ebc3c/go.mod h1:+Iv709OXzPkLLItrs8aTylzVeCNVT42VGChRzgLzvcE=
+github.com/Jorik-VanLooy/project-hive-box/handlers v0.0.0-20241127225253-b40cada0b1c8 h1:iW9iwz3Mnv17Cjz+7xS4+mloSlQOcabJ7tgCLxRkHcI=
+github.com/Jorik-VanLooy/project-hive-box/handlers v0.0.0-20241127225253-b40cada0b1c8/go.mod h1:+Iv709OXzPkLLItrs8aTylzVeCNVT42VGChRzgLzvcE=
 github.com/Jorik-VanLooy/project-hive-box/handlers v0.0.2-0.20241118213443-003f6cfda933 h1:+xFVXqwnaRZCNxsIlAc/seQnssf8X6I+LPFolTFPp1s=
 github.com/Jorik-VanLooy/project-hive-box/handlers v0.0.2-0.20241118213443-003f6cfda933/go.mod h1:+Iv709OXzPkLLItrs8aTylzVeCNVT42VGChRzgLzvcE=
 github.com/Jorik-VanLooy/project-hive-box/handlers v0.0.2-0.20241118222456-6e4c42bda973 h1:o/Ep8Apj34iHFPJjLHZoB4WrJG0fYJIjtykb/ANgN4Y=
