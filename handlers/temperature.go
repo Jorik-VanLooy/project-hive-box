@@ -82,5 +82,17 @@ func GetTemperature(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 
-	fmt.Fprintf(w, "%.2f", data.MainStats.Temp-kelvin)
+	w.WriteHeader(http.StatusOK)
+	w.Header().Set("Content-Type", "application/json")
+	resp := make(map[string]float32)
+	resp["temperature"] = data.MainStats.Temp - kelvin
+	jsonResp, err := json.Marshal(resp)
+	if err != nil {
+		log.Fatal("error in json marshal")
+	}
+
+	_, err = w.Write(jsonResp)
+	if err != nil {
+		log.Fatalf("unexpected error: %v", err)
+	}
 }

@@ -9,5 +9,6 @@ import (
 func main() {
 	http.HandleFunc("/version", handlers.GetVersion)
 	http.HandleFunc("/temperature", handlers.GetTemperature)
+	http.HandleFunc("/health", handlers.GetHealth)
 	http.ListenAndServe(":3333", nil)
 }
