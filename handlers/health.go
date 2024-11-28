@@ -7,8 +7,8 @@ import (
 )
 
 func GetHealth(w http.ResponseWriter, r *http.Request) {
-	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK)
 	resp := make(map[string]string)
 	resp["message"] = "healthy"
 	jsonResp, err := json.Marshal(resp)

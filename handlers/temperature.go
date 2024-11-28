@@ -82,8 +82,8 @@ func GetTemperature(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 
-	w.WriteHeader(http.StatusOK)
 	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK)
 	resp := make(map[string]float32)
 	resp["temperature"] = data.MainStats.Temp - kelvin
 	jsonResp, err := json.Marshal(resp)
